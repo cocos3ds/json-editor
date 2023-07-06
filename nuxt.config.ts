@@ -6,14 +6,20 @@ export default defineNuxtConfig({
     head: {
       script: [
         {
+          hid: 'gtm-script1',
           src: "https://www.googletagmanager.com/gtag/js?id=G-R890MKV9YM",
           body: true,
           async: true,
         },
         {
-          src: "/public/initgtag.js",
+          hid: 'gtm-script2',
+          innerHTML: `window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          
+          gtag('config', 'G-R890MKV9YM');`,
           body: true,
-          async: true,
+          type: 'text/javascript'
         },
       ],
     }
