@@ -1,5 +1,11 @@
 <template>
   <div>
-    <JsonFormatter/>
+    <HomeView/>
   </div>
 </template>
+
+<style scoped>
+body{
+  background-color: #2f3f4c;
+}
+</style>

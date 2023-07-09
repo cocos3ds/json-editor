@@ -1,3 +1,3 @@
 <template>
-    <TextDiff/>
+    <LearnToCode/>
 </template>

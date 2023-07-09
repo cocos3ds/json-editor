@@ -3114,6 +3114,11 @@ hash-sum@^2.0.0:
   resolved "https://registry.yarnpkg.com/hash-sum/-/hash-sum-2.0.0.tgz#81d01bb5de8ea4a214ad5d6ead1b523460b0b45a"
   integrity sha512-WdZTbAByD+pHfl/g9QSsBIIwy8IT+EsPiKDs0KNX+zSHhdDLFKdZu0BQHljvO+0QI/BasbMSUa8wYNCZTvhslg==
 
+highlight.js@^11.5.1, highlight.js@^11.8.0:
+  version "11.8.0"
+  resolved "https://registry.yarnpkg.com/highlight.js/-/highlight.js-11.8.0.tgz#966518ea83257bae2e7c9a48596231856555bb65"
+  integrity sha512-MedQhoqVdr0U6SSnWPzfiadUcDHfN/Wzq25AkXiQv9oiOO/sG0S7XkvpFIqWBl9Yq1UYyYOOVORs5UW2XlPyzg==
+
 hookable@^5.5.3:
   version "5.5.3"
   resolved "https://registry.yarnpkg.com/hookable/-/hookable-5.5.3.tgz#6cfc358984a1ef991e2518cb9ed4a778bbd3215d"
@@ -6031,6 +6036,14 @@ vue-devtools-stub@^0.1.0:
   resolved "https://registry.yarnpkg.com/vue-devtools-stub/-/vue-devtools-stub-0.1.0.tgz#a65b9485edecd4273cedcb8102c739b83add2c81"
   integrity sha512-RutnB7X8c5hjq39NceArgXg28WZtZpGc3+J16ljMiYnFhKvd8hITxSWQSQ5bvldxMDU6gG5mkxl1MTQLXckVSQ==
 
+vue-highlight-code@^0.1.16:
+  version "0.1.16"
+  resolved "https://registry.yarnpkg.com/vue-highlight-code/-/vue-highlight-code-0.1.16.tgz#b3f46730477c7652ad50fb074d3715f7cc99bab4"
+  integrity sha512-aPVwAOxHxG9wCpbZKEmqdlPc/g9l+FT+uYA6bLrqpbEe72KcxqIPuVjjtDX0Eba4qxG35gyxESyiJWeVtsv/Vg==
+  dependencies:
+    highlight.js "^11.5.1"
+    vue "^3.2.25"
+
 vue-json-pretty@^2.2.4:
   version "2.2.4"
   resolved "https://registry.yarnpkg.com/vue-json-pretty/-/vue-json-pretty-2.2.4.tgz#4c82fa78aeb987460c727c3b31e45a58f58d9c95"
@@ -6043,7 +6056,7 @@ vue-router@^4.2.2:
   dependencies:
     "@vue/devtools-api" "^6.5.0"
 
-vue@^3.3.4:
+vue@^3.2.25, vue@^3.3.4:
   version "3.3.4"
   resolved "https://registry.yarnpkg.com/vue/-/vue-3.3.4.tgz#8ed945d3873667df1d0fcf3b2463ada028f88bd6"
   integrity sha512-VTyEYn3yvIeY1Py0WaYGZsXnz3y5UnGi62GjVEqvEGPl6nxbOrCXbVOTQWBEJUqAyTUk2uJ5JLVnYJ6ZzGbrSw==
