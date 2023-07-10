@@ -17,7 +17,7 @@
 
 <script setup>
 import hljs from 'highlight.js'
-import 'highlight.js/styles/github-dark.css'
+import 'highlight.js/styles/atom-one-light.css'
 
 useHead({
     title:"JSON Editor Online - Learn to Code"

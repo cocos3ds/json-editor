@@ -3,38 +3,9 @@ import 'vue-json-pretty/lib/styles.css';
 import JSConfetti from 'js-confetti'
 import VueJsonPretty from 'vue-json-pretty';
 let json = ref('')
+let json_obj = ref('')
 
-let backgroundcolor = ref('')
-let count = 0;
-const json_obj = computed(() => {
-    if (json.value != '') {
-        try {
-            let result = JSON.parse(json.value)
-            if (count == 1) {
-                // @ts-ignore
-                if (window.document) {
-                    const confetti = new JSConfetti()
-                    confetti.addConfetti();
-                }
-
-            }
-            if (count >= 1) {
-                // @ts-ignore
-                gtag('event', 'inputjson', {
-                    'app_name': 'jsonv2',
-                    'screen_name': 'home'
-                });
-            }
-            backgroundcolor.value = "background-color:#4fff4f;"
-            count++;
-            return result;
-        } catch (e) {
-            backgroundcolor.value = "background-color:#ff6666;"
-            return {}
-        }
-    }
-    if (count == 0){
-        return JSON.parse('{\
+json_obj.value = JSON.parse('{\
     "welcome": {\
       "website_information": {\
           "Description": "This is JSON Formatter tools online",\
@@ -66,6 +37,35 @@ const json_obj = computed(() => {
       }\
   }\
 }')
+
+let backgroundcolor = ref('')
+let count = 0;
+json_obj = computed(() => {
+    if (json.value != '') {
+        try {
+            let result = JSON.parse(json.value)
+            if (count == 1) {
+                // @ts-ignore
+                if (window.document) {
+                    const confetti = new JSConfetti()
+                    confetti.addConfetti();
+                }
+
+            }
+            if (count >= 1) {
+                // @ts-ignore
+                gtag('event', 'inputjson', {
+                    'app_name': 'jsonv2',
+                    'screen_name': 'home'
+                });
+            }
+            backgroundcolor.value = "background-color:#4fff4f;"
+            count++;
+            return result;
+        } catch (e) {
+            backgroundcolor.value = "background-color:#ff6666;"
+            return {}
+        }
     }
     return {}
 
