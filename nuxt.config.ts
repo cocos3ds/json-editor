@@ -10,14 +10,6 @@ export default defineNuxtConfig({
           "content": "width=device-width, initial-scale=1"
         },
         {
-          "name": "keyword",
-          "content": "json, editor,vue3,vue, online, formatter, view, edit, format, query, validate, share, formatter, json parse,text Diff"
-        },
-        {
-          "name": "description",
-          "content": "JSON Editor build by vue, format,edit, format, transform, validate, and share your JSON data."
-        },
-        {
           "name": "author",
           "content": "Neo in the matrix"
         },

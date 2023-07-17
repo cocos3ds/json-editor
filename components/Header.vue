@@ -10,7 +10,7 @@
         >
             <el-menu-item>JSON Editor</el-menu-item>
             <div class="flex-grow" />
-            <el-menu-item index="/">Home</el-menu-item>
+            <el-menu-item index="/">Formatter</el-menu-item>
             <el-menu-item index="/introducing-json">Introducing JSON</el-menu-item>
             <el-menu-item index="/text-diff">Text Diff</el-menu-item>
             <el-menu-item index="/learn-to-code">Learn to code</el-menu-item>

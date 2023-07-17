@@ -10,7 +10,18 @@
   
 <script setup>
 useHead({
-    title:"JSON Editor Online - Home"
+    title:"JSON Editor Online - JSON Formatter & Validator",
+    meta: [
+        { name: "description", content: "json editor is an online tool that can help you format, edit, validate and share json" },
+        { name: "keywords", content: "json,jsonv2,json latest,json edit online,json format,json tool online" }
+    ],
+    link:[
+        {
+            rel:"canonical",
+            href:"https://www.jsonv2.com/index.html"
+        }
+    ]
+
 })
 
 </script>

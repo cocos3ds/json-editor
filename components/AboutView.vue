@@ -26,11 +26,19 @@
 
 <script setup>
 import hljs from 'highlight.js'
-import 'highlight.js/styles/color-brewer.css'
-
 
 useHead({
-    title:"JSON Editor Online - Introducing JSON"
+    title:"JSON Editor Online - Introducing JSON",
+    meta: [
+        { name: "description", content: "what is json?Briefly introduce json" },
+        { name: "keywords", content: "json,introduce json,json tools" }
+    ],
+    link:[
+        {
+            rel:"canonical",
+            href:"https://www.jsonv2.com/introducing-json/index.html"
+        }
+    ]
 })
 
   let demo=`{
