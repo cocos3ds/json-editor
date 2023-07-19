@@ -1,6 +1,6 @@
 <template>
     <div class="container-wrapper">
-        <div id="container" style="width: 1200px; height: 800px; border: 1px solid grey"></div>
+        <div id="container" style="height: 800px; border: 1px solid grey"></div>
     </div>
     
 </template>
@@ -55,11 +55,11 @@ onMounted(()=>{
 <style scoped>
     .container-wrapper{
         margin:0px auto;
-        width: 1024px; 
+        width: 70%; 
         height: 600px;
     }
     .container-wrapper .container{
-        width: 800px; height: 600px;
+        width: 60%; height: 600px;
         border: 1px solid grey
     }
 </style>

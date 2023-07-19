@@ -17,6 +17,9 @@ export default defineNuxtConfig({
           "charset": "utf-8"
         }
       ],
+      htmlAttrs: {
+        lang: 'en'
+      },
       script: [
         {
           hid: 'gtm-script1',

@@ -70,10 +70,23 @@ json_obj = computed(() => {
     return {}
 
 })
+
+
+const pElementRef = ref(null)
+onMounted(() => {
+//   pElementRef.value.textContent = 'mounted!'
+  pElementRef.value.style = 'display:none;'
+})
 </script>
 
 <template>
     <div>
+
+        <div ref="pElementRef">
+            <h1>This is JSON Formatter tools online</h1>
+            <h3>Our goal is to create a safe and efficient json editor and viewer</h3>
+            <h3>The site is just a purely static page and does not save user-entered data</h3>
+        </div>
         <el-container>
             <el-aside width="43%" class="json-input-area-wrapper">
                 <div class="json-input-title"><span class="down-arrow">↓↓↓↓</span>Please enter your json string below<span class="down-arrow">↓↓↓↓</span></div>
